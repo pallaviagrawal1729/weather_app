@@ -8,9 +8,9 @@ const forecast = (lat, lon) => {
         const url = weatherUrl.replace('lat_lon', `${lat}, ${lon}`);
         request.get(`${url}&units=f`, { json: true }, (error, { body }) => {
             if (error)
-                reject('Unable to connect to weather service!');
+                reject(new Error('Unable to connect to weather service!'));
             else if (!body)
-                reject('Weather could not be fetched for provided address!');
+                reject(new Error('Weather could not be fetched for provided address!'));
             else
                 resolve(body.current);
         })

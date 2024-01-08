@@ -7,7 +7,7 @@ const geocode_callback = (address, callback) => {
     const geoUrl = process.env.GEOCODING_URL;
     const url = geoUrl.replace('address', address);
     setTimeout(() => {
-        request.get(url, { json: true }, (error, { body }) => {
+        request.get(`${url}&limit=1`, { json: true }, (error, { body }) => {
             if (error)
                 callback('Unable to connect to geocoding service!');
             else if (!body.length)
@@ -19,7 +19,7 @@ const geocode_callback = (address, callback) => {
                     place: body[0].display_name
                 });
         });
-    }, 2000);
+    }, 3000);
 
 }
 

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/background.jpeg') no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    max-width: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10vh;
+    background-color: rgba(245,255,255, 0.5); /* Set the background color to be transparent */
+    border-radius: 3vh;
+    box-shadow: 0 0 2vh rgba(0, 0, 0, 0.3); /* Adjust the alpha value here for the box shadow transparency */
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    align-items: center;
+    padding-bottom: 10px; /* Add some space at the bottom */
+    border-bottom: 2px solid rgb(56,24,119); /* Add a border at the bottom */
+}
+
+header h1 {
+    font-size: 35px;
+    color: rgb(18,7,52);
+    margin-bottom: 10px; /* Add space between the title and the links */
+}
+
+header a {
+    text-decoration: none;
+    color: rgba(56,24,119, 0.7);
+    margin: 5px; /* Add space around each link */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(52,51,176);
+    color: #fff;
+    border: none;
+    padding: 2vh 3vh;
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin-top: auto;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgba(56,24,119, 0.7);
+    margin: 5px; /* Add space around each link */
+    font-size: 18px;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="icon" href="/assets/icons/icon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        {{>header}}
+        
+        <main>
+            <h2>Hi, I'm {{author}}</h2>
+            <p>Welcome to my corner of the Weather App! Here's a bit about me.</p>
+
+            <section>
+                <h3>About Me</h3>
+                <p>I'm an enthusiastic software developer passionate about creating innovative solutions. 
+                My goal is to make weather information easily accessible and enjoyable for everyone.</p>
+            </section>
+
+            <section>
+                <h3>Contact Information</h3>
+                <ul>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/pallavi-agrawal-learner/" target="_blank">LinkedIn Profile</a></li>
+                    <li>GitHub: <a href="https://github.com/pallaviagrawal1729" target="_blank">GitHub Profile</a></li>
+                    <li>Email: your.email@example.com</li>
+                </ul>
+            </section>
+        </main>
+
+        {{>footer}}
+    </div>
+</body>
+</html>

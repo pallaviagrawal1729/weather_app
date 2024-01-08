@@ -1,5 +1,5 @@
 const yargs = require('yargs');
-const getWeather = require('./weather_app.helper');
+const { getWeather } = require('./src/weather_app.helper');
 
 yargs.command({
     command: ['weather_forecast', 'weather', 'forecast'],
@@ -23,4 +23,4 @@ yargs.command({
     }
 });
 
-yargs.parse();
+yargs.parse(); 
